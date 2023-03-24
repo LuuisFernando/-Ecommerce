@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Fones Ouvido
+    </title>
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- Icons -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <!--Link css-->
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+     <header>
+        <a href="#" class="logo"><i class='bx bxl-apple' ></i>AppleStore</a>
+        
+        <ul class="navegação">
+           <li><a href="#">Visão geral</a></li>
+           <li><a href="#">Teach Specs</a></li>
+           <li><a href="#">Reviews</a></li>
+           <li><a href="#">Contact Us</a></li>
+        </ul> <!--Navegação-->
+
+        <div class="header-icons">
+            <i class='bx bx-cart' ></i>
+            <div class="menu"><i class='bx bx-menu'></i></div>
+    </div>
+    </header>
+
+    <section class="home">
+        <div class="home-img">
+            <img src="produto12.png" class="one">
+        </div> <!--home-img-->
+
+        <div class="home-text">
+            <h1>AirPods Max</h1>
+            <h5>The smarter way to listen</h5>
+            <h3>$199.00</h3>
+            <a href="#" class="btn">Shop Now</a>
+        </div> <!--home-text-->
+    </section>
+
+  
+
+    <div class="main">
+        <div class="row">
+            <li><img src="main1.png" onclick="slider('produto12.png')"></li>
+        </div><!--row-->
+
+        <div class="row2">
+            <li><img src="main2.png" onclick="slider('produto2.png')"></li>
+        </div><!--row-->
+
+        <div class="row3">
+            <li><img src="main3.png" onclick="slider('produto3.png')"></li>
+        </div><!--row-->
+
+        <div class="row4">
+            <li><img src="main4.png" onclick="slider('produto4.png')"></li>
+        </div><!--row-->
+
+    </div> <!--main-->
+
+    <div class="corp">
+        <div class="corp-img">
+            <img src="profile2-removebg-preview.png">
+        </div> <!--corm-img-->
+
+        <div class="homer-text">
+            <h1>AirPods Max</h1>
+          <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id massa congue, interdum neque nec, vehicula justo. Duis eget efficitur tellus. Aenean in ultrices est. </h2>
+        </div> <!--home-text-->
+
+    </div>
+ <footer>Feito com Carinho pelo devLuis</footer>
+  
+    <script>
+        function slider (anything){
+            document.querySelector ('.one') .src = anything;
+        };
+
+       let menu = document.querySelector ('#menu-icon');
+       let navbar = document.querySelector ('.navbar');
+
+       menu.onclick = () => {
+        menu.classList.toggle ('bx-x');
+        navbar.classList.toggle ('open');
+       }
+    </script>
+</html>
